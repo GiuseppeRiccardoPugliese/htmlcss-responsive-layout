@@ -1,0 +1,119 @@
+/*************************************************
+    GENERAL STYLES
+*************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*************************************************
+    STILI HEADER
+*************************************************/
+.header_container {
+    height: 60px;
+    width: 100%;
+    background-color: #0084fd;
+    /* z-index: 500;
+    position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.get-started {
+    color: black;
+    background-color: white;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header_desktop li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.header_desktop ul {
+    display: flex;
+}
+
+/*************************************************
+    STILI ABOUT APP
+*************************************************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col {
+    background-color: #b5ddff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.about_app h4 {
+    color: #0084fd;
+    padding: 10px 0;
+}
+
+
+
+/*************************************************
+    MOBILE LAYOUT
+*************************************************/
+@media all and (max-width:480px) {
+    .header_desktop {
+        display: none;
+    }
+}
+
+/*************************************************
+    TABLET LAYOUT
+*************************************************/
+@media all and (min-width:481px) {
+    .header_desktop {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: calc(100% / 3);
+    }
+
+    #demo {
+        width: calc((100% / 3) * 2);
+    }
+}
+
+/*************************************************
+    DESKTOP LAYOUT
+*************************************************/
+@media all and (min-width:769px) {
+    .header_mob_tab {
+        display: none;
+    }
+
+    .header_desktop {
+        display: inline-block;
+    }
+
+    .container {
+        width: 70%;
+    }
+}
