@@ -126,6 +126,38 @@ header a {
     background-color: #9792e4;
 }
 
+.strategic_planning img {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.strategic_planning h1,
+.strategic_planning p {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.app_develop {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-down-long {
+    background-color: #9792e4;
+    border-radius: 60%;
+}
+
+.app_develop a {
+    padding-bottom: 20px;
+}
+
+.app_develop i {
+    padding: 25px;
+}
+
 /*************************************************
     MOBILE LAYOUT
 *************************************************/
@@ -180,12 +212,17 @@ header a {
     }
 
     .container {
-        width: 70%;
+        max-width: 70%;
     }
 
     /* Stile della prima colonna nella prima riga */
     #demo {
         display: flex;
+    }
+
+    /* Stili della seconda sezione con bg viola */
+    .col1 {
+        width: calc(100% / 2);
     }
 
 }
