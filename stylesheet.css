@@ -52,28 +52,86 @@ header a {
     STILI ABOUT APP
 *************************************************/
 .container {
-    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .col {
     background-color: #b5ddff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
 }
 
+.about_app p {
+    line-height: 150%;
+    color: #5c7081;
+    font-weight: 600;
+}
 
-.about_app h4 {
+.about_app h3 {
+    font-size: 25px;
     color: #0084fd;
     padding: 10px 0;
 }
 
+/* Stile BGBLUE BUTTON */
+.bgblue_button a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 8px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #0084fd;
+    max-width: 55%;
+    margin-top: 30px;
+}
 
+.bgblue_button h5 {
+    letter-spacing: 3px;
+    /* FINEEEE STILE BUTTON BLU*/
+}
+
+/* STILI FOTOGRAFIA PRIMA COL */
+.foto_telefono img {
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: -30px;
+}
+
+/* STILE DELLE COLONNE PIU PICCOLEE */
+.toptext_blue {
+    color: #0084fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.toptext_blue i {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+}
+
+/*************************************************
+    STILI STRATEGIC PLANNING
+*************************************************/
+.strategic_planning {
+    background-color: #9792e4;
+}
 
 /*************************************************
     MOBILE LAYOUT
 *************************************************/
 @media all and (max-width:480px) {
+
+    /* Stili header */
     .header_desktop {
         display: none;
     }
@@ -83,19 +141,25 @@ header a {
     TABLET LAYOUT
 *************************************************/
 @media all and (min-width:481px) {
+
+    /* Stili header */
     .header_desktop {
         display: none;
     }
 
+    /* Stili delle righe e colonne del tablet & DESKTOP device */
     .row {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .col {
-        width: calc(100% / 3);
+        width: calc((100% / 3) - 30px);
+        margin-right: 15px;
     }
 
+    /* Stile della prima colonna nella prima riga */
     #demo {
         width: calc((100% / 3) * 2);
     }
@@ -105,6 +169,8 @@ header a {
     DESKTOP LAYOUT
 *************************************************/
 @media all and (min-width:769px) {
+
+    /* Stili header */
     .header_mob_tab {
         display: none;
     }
@@ -116,4 +182,10 @@ header a {
     .container {
         width: 70%;
     }
+
+    /* Stile della prima colonna nella prima riga */
+    #demo {
+        display: flex;
+    }
+
 }
