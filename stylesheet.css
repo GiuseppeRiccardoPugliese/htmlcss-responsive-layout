@@ -124,10 +124,11 @@ header a {
 *************************************************/
 .strategic_planning {
     background-color: #9792e4;
+    padding-bottom: 30px;
 }
 
 .strategic_planning img {
-    width: 100%;
+    max-width: 100%;
     padding: 30px 0;
 }
 
@@ -156,6 +157,29 @@ header a {
 
 .app_develop i {
     padding: 25px;
+}
+
+/*************************************************
+    STILI TESTIMONIALS SECT
+*************************************************/
+.testimonials h2 {
+    color: #9792e4;
+    padding: 20px 0;
+}
+
+.testimonials_text {
+    padding: 20px 0;
+}
+
+.testimonials_card {
+    background-color: #9792e4;
+    border-radius: 30px;
+}
+
+.card_img img {
+    width: 50%;
+    padding: 20px 0;
+    border-radius: 50%;
 }
 
 /*************************************************
@@ -225,4 +249,16 @@ header a {
         width: calc(100% / 2);
     }
 
+    .planning_left-side img {
+        max-width: 100%;
+    }
+
+    .app_develop img {
+        max-width: 40%;
+    }
+
+    .row1 {
+        display: flex;
+        align-items: flex-end;
+    }
 }
