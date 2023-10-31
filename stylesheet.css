@@ -18,13 +18,17 @@
     height: 60px;
     width: 100%;
     background-color: #0084fd;
-    /* z-index: 500;
-    position: fixed; */
+    z-index: 500;
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-bottom: 40px;
+}
+
+header {
+    margin-bottom: 100px;
 }
 
 .get-started {
@@ -291,12 +295,17 @@ header a {
     border-radius: 50%;
 }
 
-.fa-quote-left {
-    position: relative;
-    left: 40%;
-    bottom: 45%;
+/* Fix per le virgolette attaccate all'immagine */
+.about_us .fa-quote-left {
+    position: absolute;
+    left: 145px;
+    top: 0;
     color: #928ddb;
     font-size: 40px
+}
+
+.positionrelative {
+    position: relative;
 }
 
 .linkedin_btn {
@@ -469,6 +478,10 @@ header a {
         padding-left: 10px;
         max-width: 45%;
     }
+
+    .about_us .fa-quote-left {
+        left: 160px;
+    }
 }
 
 /*************************************************
@@ -515,5 +528,10 @@ header a {
     /* Stili della quarta sezione con calc per le card */
     .card_sect4 {
         width: calc((100% / 3) - 10px);
+    }
+
+    /* About us */
+    .about_us .fa-quote-left {
+        left: 145px;
     }
 }
