@@ -83,7 +83,6 @@ header a {
     padding: 10px 30px;
     border-radius: 25px;
     background-color: #0084fd;
-    max-width: 55%;
 }
 
 .bgblue_button {
@@ -257,7 +256,6 @@ header a {
     text-decoration: none;
     border-radius: 25px;
     background-color: #9792e4;
-    max-width: 50%;
     letter-spacing: 3px;
     font-weight: 600;
 }
@@ -293,6 +291,14 @@ header a {
     border-radius: 50%;
 }
 
+.fa-quote-left {
+    position: relative;
+    left: 40%;
+    bottom: 45%;
+    color: #928ddb;
+    font-size: 40px
+}
+
 .linkedin_btn {
     margin: 30px 0;
 }
@@ -309,6 +315,81 @@ header a {
     border-radius: 25px;
     background-color: #9792e4;
     padding-right: 10px;
+}
+
+/*************************************************
+    GET STARTED
+*************************************************/
+.get_started {
+    background-color: #9792e4;
+    padding: 30px 0;
+}
+
+.get_started span,
+.get_started a,
+.get_started p,
+.get_started h2 {
+    color: white;
+    line-height: 1.5;
+}
+
+.fa-circle {
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.get_started h1 {
+    color: #fdc15f;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.get_started h2 {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#opacity {
+    filter: opacity(0.6);
+}
+
+.getstarted_btn a {
+    color: #9792e4;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 25px;
+    background-color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.getstarted_btn {
+    margin: 40px 0;
+}
+
+/*************************************************
+    FOOTER
+*************************************************/
+.fine_pagina {
+    background-color: #333333;
+    padding: 30px 0;
+}
+
+.fine_pagina p:last-child {
+    padding-top: 30px;
+}
+
+.fine_pagina p {
+    color: white;
+    padding: 10px 0;
+}
+
+.fine_pagina a {
+    color: #928ddb;
 }
 
 /*************************************************
