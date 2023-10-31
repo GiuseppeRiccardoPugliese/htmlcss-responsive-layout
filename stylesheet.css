@@ -79,6 +79,7 @@ header a {
 .bgblue_button a {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
     gap: 8px;
     text-decoration: none;
@@ -174,44 +175,134 @@ header a {
 .testimonials_card {
     background-color: #9792e4;
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 
+.card_img {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
 .card_img img {
-    width: 50%;
-    padding: 20px 0;
+    /* Fix della foto per farla perfettamente rotonda */
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
-.strategic_planning img {
-    width: 100%;
-    padding: 30px 0;
-}
-
-.strategic_planning h1,
-.strategic_planning p {
+.card_text {
     color: white;
-    padding-bottom: 20px;
+    padding: 10px;
 }
 
-.app_develop {
-    display: flex;
-    background-color: white;
-    border-radius: 30px;
-    flex-direction: column;
-    align-items: center;
+.card_text p {
+    padding-bottom: 10px;
 }
 
-.fa-down-long {
+.card_text span {
+    font-weight: 600;
+}
+
+/*************************************************
+    BENEFITS OF WORKING WITH US
+*************************************************/
+.working_with_us {
     background-color: #9792e4;
-    border-radius: 60%;
+    padding-bottom: 30px;
 }
 
-.app_develop a {
-    padding-bottom: 20px;
+.working_with_us h2 {
+    color: white;
+    padding: 20px 0;
 }
 
-.app_develop i {
-    padding: 25px;
+/* Stili card */
+.card_sect4 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.card_sect4 h4 {
+    font-size: 20px;
+    color: #9792e4;
+    padding: 10px 0;
+}
+
+.card_sect4 p {
+    color: #adadad;
+    padding-bottom: 15px;
+    line-height: 1.5;
+}
+
+.card_sect4 span {
+    font-size: 30px;
+    font-weight: 800;
+    color: #9792e4;
+}
+
+/* Set up btn viola */
+.bgviolet_button a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #9792e4;
+    max-width: 50%;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+/*************************************************
+    ABOUT US
+*************************************************/
+.aboutus_left h1 {
+    color: #9792e4;
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.aboutus_left p {
+    padding: 20px 0;
+}
+
+.aboutus_left {
+    line-height: 2;
+}
+
+.aboutus_right p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #9792e4;
+}
+
+.aboutus_right img {
+    /* Fix della foto per farla perfettamente rotonda */
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.linkedin_btn a {
+    /* Setup linkedin btn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 25px;
+    background-color: #9792e4;
+    max-width: 50%;
+    margin: 30px 0;
 }
 
 /*************************************************
@@ -251,6 +342,36 @@ header a {
     #demo {
         width: calc((100% / 3) * 2);
     }
+
+    /* Stile della TERZA sect */
+    .testimonials_card {
+        display: flex;
+    }
+
+    .card_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        text-align: left;
+    }
+
+    /* Stile della QUARTA sect */
+    .rowtab-desk {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card_sect4 {
+        width: calc((100% / 2) - 10px);
+    }
+
+    /* Stile  ABOUT US sect*/
+    /* .row_aboutus {
+    display: flex;
+} */
 }
 
 /*************************************************
@@ -281,7 +402,6 @@ header a {
         width: calc(100% / 2);
     }
 
-<<<<<<< HEAD
     .planning_left-side img {
         max-width: 100%;
     }
@@ -294,6 +414,9 @@ header a {
         display: flex;
         align-items: flex-end;
     }
-=======
->>>>>>> 7b09784b14ea923183f64d4da6e7077111561306
+
+    /* Stili della quarta sezione con calc per le card */
+    .card_sect4 {
+        width: calc((100% / 3) - 10px);
+    }
 }
