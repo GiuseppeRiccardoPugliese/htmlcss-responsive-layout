@@ -369,9 +369,13 @@ header a {
     }
 
     /* Stile  ABOUT US sect*/
-    /* .row_aboutus {
-    display: flex;
-} */
+    .row_aboutus {
+        display: flex;
+    }
+
+    .aboutus_right {
+        padding-top: 30px;
+    }
 }
 
 /*************************************************
