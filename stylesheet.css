@@ -77,20 +77,25 @@ header a {
 
 /* Stile BGBLUE BUTTON */
 .bgblue_button a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     gap: 8px;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 25px;
     background-color: #0084fd;
     max-width: 55%;
-    margin-top: 30px;
 }
 
-.bgblue_button h5 {
+.bgblue_button {
+    margin: 30px 0;
+}
+
+.fa-apple {
+    margin: 5px;
+}
+
+.bgblue_button span {
+    font-weight: 600;
     letter-spacing: 3px;
     /* FINEEEE STILE BUTTON BLU*/
 }
@@ -247,11 +252,9 @@ header a {
 
 /* Set up btn viola */
 .bgviolet_button a {
-    display: flex;
-    justify-content: center;
+    padding: 10px 30px;
     color: white;
     text-decoration: none;
-    padding: 10px;
     border-radius: 25px;
     background-color: #9792e4;
     max-width: 50%;
@@ -290,19 +293,22 @@ header a {
     border-radius: 50%;
 }
 
+.linkedin_btn {
+    margin: 30px 0;
+}
+
+.fa-linkedin {
+    margin: 5px;
+}
+
 .linkedin_btn a {
     /* Setup linkedin btn */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
-    gap: 10px;
     text-decoration: none;
     padding: 6px;
     border-radius: 25px;
     background-color: #9792e4;
-    max-width: 50%;
-    margin: 30px 0;
+    padding-right: 10px;
 }
 
 /*************************************************
@@ -373,8 +379,14 @@ header a {
         display: flex;
     }
 
+    .aboutus_left {
+        max-width: 55%;
+    }
+
     .aboutus_right {
         padding-top: 30px;
+        padding-left: 10px;
+        max-width: 45%;
     }
 }
 
